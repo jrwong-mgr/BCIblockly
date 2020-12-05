@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Blockly Demo Joshua Wong</title>
+  <script src="scripts/blockly_compressed.js"></script>
+  <script src="scripts/blocks_compressed.js"></script>
+  <script src="scripts/blocks.js"></script>
+  <script src="scripts/colour.js"></script>
+  <script src="scripts/lists.js"></script>
+  <script src="scripts/logic.js"></script>
+  <script src="scripts/loops.js"></script>
+  <script src="scripts/math.js"></script>
+  <script src="scripts/procedures.js"></script>
+  <script src="scripts/text.js"></script>
+  <script src="scripts/variables.js"></script>
+  <script src="scripts/variables_dynamic.js"></script>
+  <script src="scripts/start.js"></script>
+  <script src="scripts/en.js"></script>
+
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+  <header class="mdl-color--blue-500">
+      <h1>Demo</h1>
+  </header>
+    <h2>Blockly Demo </h2>
+    <div style="align-items: center;">
+        <div id="blocklyDiv" style="height: 700px; width: 800px;"></div>
+        <xml id="toolbox" style="display: none">
+          <category name="Default">
+            <block type="controls_if"></block>
+            <block type="controls_repeat_ext"></block>
+            <block type="logic_compare"></block>
+            <block type="math_number"></block>
+            <block type="math_arithmetic"></block>
+            <block type="text"></block>
+            <block type="text_print"></block>
+          </category>
+          <category name="Colour Sample">
+            <block type="colour_picker"></block>
+            <block type="colour_random"></block>
+            <block type="colour_rgb"></block>
+          </category>
+          <category name="Lists Sample">
+            <block type="lists_create_empty"></block>
+            <block type="lists_length"></block>
+            <block type="lists_repeat"></block>
+          </category> 
+          <category name="Logic Sample">
+            <block type="logic_boolean"></block>
+            <block type="controls_if"></block>
+            <block type="controls_ifelse"></block>
+            <block type="logic_compare"></block>
+          </category>
+          <category name="Looooooooops">
+            <block type="controls_repeat_ext"></block>
+            <block type="controls_repeat"></block>
+            <block type="controls_whileUntil"></block>
+            <block type="controls_for"></block>
+          </category>
+          <category name="Math Blocks">
+            <block type="math_arithmetic"></block>
+            <block type="math_single"></block>
+            <block type="math_constant"></block>
+            <block type="math_on_list"></block>
+          </category>
+          <category name="Text Blocks">
+            <block type="text_multiline"></block>
+            <block type="text_join"></block>
+            <block type="text_append"></block>
+            <block type="text_length"></block>
+          </category>
+          <category name="Dynamic Variables">
+            <block type="variables_get_dynamic"></block>
+            <block type="variables_set_dynamic"></block>
+          </category>
+          <category name="Variables">
+            <block type="variables_get"></block>
+            <block type="variables_set"></block>
+          </category>
+            
+        </xml>
+    </div>
+  <script>
+    var workspace = Blockly.inject('blocklyDiv',
+        {toolbox: document.getElementById('toolbox')});
+  </script>
+  <p>
+      Here is the link to the online dev tool to make more blocks: <a href="https://blockly-demo.appspot.com/static/demos/blockfactory/index.html">HERE</a>
+  </p>
+</body>
+</html>

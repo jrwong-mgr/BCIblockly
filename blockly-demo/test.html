@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Blockly Demo Joshua Wong</title>
+  <script src="scripts/blockly_compressed.js"></script>
+  <script src="scripts/blocks_compressed.js"></script>
+  <script src="scripts/colour.js"></script>
+  <script src="scripts/lists.js"></script>
+  <script src="scripts/logic.js"></script>
+  <script src="scripts/loops.js"></script>
+  <script src="scripts/math.js"></script>
+  <script src="scripts/procedures.js"></script>
+  <script src="scripts/text.js"></script>
+  <script src="scripts/variables.js"></script>
+  <script src="scripts/variables_dynamic.js"></script>
+  <script src="scripts/blocks.js"></script>
+  <script src="scripts/start.js"></script>
+  <script src="scripts/en.js"></script>
+
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+  <header class="mdl-color--blue-500">
+      <h1>Demo</h1>
+  </header>
+    <h2>Blockly Demo </h2>
+    <div style="align-items: center;">
+        <div id="blocklyDiv" style="height: 700px; width: 800px;"></div>
+        <xml id="toolbox" style="display: none">
+          <category name="BCI Blocks">
+            <block type="bci_init"></block>
+          </category>
+        </xml>
+    </div>
+  <script>
+    var workspace = Blockly.inject('blocklyDiv',
+        {toolbox: document.getElementById('toolbox')});
+  </script>
+  <p>
+      Here is the link to the online dev tool to make more blocks: <a href="https://blockly-demo.appspot.com/static/demos/blockfactory/index.html">HERE</a>
+  </p>
+</body>
+</html>
